@@ -19,13 +19,19 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <div className="selected-container">
-                    <InfoDisplay people={this.state.selected.people}
-                                 name={this.state.selected.name}
-                                 location={this.state.selected.location}
-                                 date={this.state.selected.date}
-                    />
-                    <LargeImage url={this.state.selected.url}/>
+                <div className="outline album-container">
+                    <div className="outline album-page">
+                        <InfoDisplay people={this.state.selected.people}
+                                     name={this.state.selected.name}
+                                     location={this.state.selected.location}
+                                     date={this.state.selected.date}
+                                     className="page-contents"/>
+                        {/*<div className="outline page-contents green">A</div>*/}
+                    </div>
+                    <div className="outline album-page ">
+                        {/*<div className="outline page-contents blue ">A</div>*/}
+                        <LargeImage url={this.state.selected.url} className="page-contents"/>
+                    </div>
                 </div>
                 <ThumbnailSelect data={this.state.data} onClick={this.select}/>
 

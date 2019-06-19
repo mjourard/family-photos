@@ -7,7 +7,7 @@ class InfoDisplay extends React.Component {
             <li key={key}>{item}</li>
         );
         return (
-            <div className="outline" style={{flexGrow: 1}}>
+            <div className="outline info-container">
                 <h1>{this.props.name}</h1>
                 <h3>People</h3>
                 <ul>

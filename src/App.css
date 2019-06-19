@@ -1,43 +1,68 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #d32f2f;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    text-align: center;
 }
 
 .outline {
-  border: solid 1px black;
+    border: solid 1px black;
 }
 
-.selected-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+    --gutter: 20px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    height: 60vh;
+    max-width: 900px;
+}
+
+.album-page {
+    flex: 1 1 100%;
+    /*width: 100%;*/
+    margin: var(--gutter);
+    background-color: #ff8a80;
+    border: 2px ridge #ffcdd2;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.page-contents {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+@media all and (min-width: 481px) {
+    .album-container {
+        max-width: 900px;
+    }
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: skyblue;
 }
