@@ -1,0 +1,70 @@
+
+:root {
+    --gutter: 20px;
+}
+
+.outer-container {
+    width: 100vw;
+    display: inline-block;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.album-container {
+    background-color: #2F2F2F;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    height: 60vh;
+}
+
+.album-page {
+    display: flex;
+    flex: 1;
+    padding: calc(var(--gutter) / 2);
+
+    /*background: rgb(102,105,74);*/
+    /*background: linear-gradient(90deg, rgba(102,105,74,1) 0%, rgba(237,233,148,1) 49%, rgba(102,105,74,1) 100%);*/
+
+    background: rgb(207,163,119);
+    background: linear-gradient(270deg, rgba(207,163,119,1) 0%, rgba(255,222,139,1) 49%, rgba(207,163,119,1) 100%);
+
+    border: 2px ridge #ffcdd2;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    height: 100%;
+    width: 1em;
+    background: rgb(247,255,174);
+    background: linear-gradient(270deg, rgba(247,255,174,1) 0%, rgba(0,0,0,1) 49%, rgba(247,255,174,1) 100%);
+}
+
+.page-contents {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+@media all and (max-width: 480px) {
+    .album-container {
+        width: 160vw;
+    }
+    .album-page {
+        width: 80vw;
+    }
+}
+
+@media all and (min-width: 481px) {
+    .album-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
