@@ -1,4 +1,8 @@
 .info-container {
     align-items: center;
     background-color: #f3f3f3;
+    padding: 5px;
+    min-width: 150px;
+    min-height: 250px;
+    outline: 3px ridge grey;
 }

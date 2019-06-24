@@ -17,6 +17,8 @@ class InfoDisplay extends React.Component {
                 <span>{this.props.location}</span>
                 <h3>Date</h3>
                 <span>{this.props.date}</span>
+                <h3>Description</h3>
+                <p>{this.props.description}</p>
             </div>
         );
     }
