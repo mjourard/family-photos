@@ -1,8 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import InfoDisplay from './components/info-display/InfoDisplay';
-import LargeImage from './components/large-image/LargeImage';
 import ThumbnailSelect from './components/thumbnail-select/ThumbnailSelect';
 import Book from './components/book/Book';
 import data from './meta.js';
