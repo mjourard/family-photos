@@ -4,6 +4,8 @@ A quick project intended for displaying family photos in a photo album-like UI
 
 It was a good excuse to try making something in react :)
 
+I didn't want to upload private family photos to github, so I used screenshots of a the show *Firefly* instead
+
 ## Intended Future Developments
 
 ### Filtering 
@@ -25,6 +27,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm run deploy`
+
+Deploys the app to github pages. Putting this at the top since its not a default script of create-react-app
 
 ### `npm start`
 
