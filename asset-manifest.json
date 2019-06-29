@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/family-photos/static/css/main.f20e87ac.chunk.css",
+    "main.js": "/family-photos/static/js/main.c6359256.chunk.js",
+    "main.js.map": "/family-photos/static/js/main.c6359256.chunk.js.map",
+    "runtime~main.js": "/family-photos/static/js/runtime~main.4250a6db.js",
+    "runtime~main.js.map": "/family-photos/static/js/runtime~main.4250a6db.js.map",
+    "static/js/2.f0927397.chunk.js": "/family-photos/static/js/2.f0927397.chunk.js",
+    "static/js/2.f0927397.chunk.js.map": "/family-photos/static/js/2.f0927397.chunk.js.map",
+    "index.html": "/family-photos/index.html",
+    "precache-manifest.58e8bc64b782dd9dd872a573b20a2a82.js": "/family-photos/precache-manifest.58e8bc64b782dd9dd872a573b20a2a82.js",
+    "service-worker.js": "/family-photos/service-worker.js",
+    "static/css/main.f20e87ac.chunk.css.map": "/family-photos/static/css/main.f20e87ac.chunk.css.map"
+  }
+}
