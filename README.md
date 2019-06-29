@@ -6,6 +6,8 @@ It was a good excuse to try making something in react :)
 
 I didn't want to upload private family photos to github, so I used screenshots of a the show *Firefly* instead
 
+[demo](https://mjourard.github.io/family-photos/)
+
 ## Intended Future Developments
 
 ### Filtering 
@@ -54,3 +56,9 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Credits
+
+There's probably a more appropriate place for this, but credits to Robin Weatherall for the icon
+
+www.iconarchive.com/show/library-icons-by-robinweatherall/book-icon.html
