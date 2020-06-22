@@ -4,23 +4,52 @@ A quick project intended for displaying family photos in a photo album-like UI
 
 It was a good excuse to try making something in react :)
 
-I didn't want to upload private family photos to github, so I used screenshots of a the show *Firefly* instead
+I didn't want to upload private family photos to github, so I used screenshots from *Firefly* instead
 
 [demo](https://mjourard.github.io/family-photos/)
 
 ## Intended Future Developments
 
+### API Backend
+
+Setup an easy backend in java for it to load from instead of hardcoding the data into the repo.
+
+Entities:
+* Photo - a photo
+    * photo_id
+    * name
+    * description
+    * date entered
+    * date modified
+    * object_storage_id
+* Object Storage
+    * object_storage_id
+    * type of storage
+    * json_storage_data
+* tag
+    * tag_id
+    * photo_id
+    * name
+    
+Endpoints:
+* /signup - creates an account
+* /login - authenticates a user
+* /albums - get the albums owned by the user
+* /albums/{album_id} - get album
+* /albums/{album_id}/photos
+* /albums/{album_id}/photos/{photo_id}
+* /albums/{album_id}/photos/{photo_id}/tags
+* /albums/{album_id}/tags
+
 ### Filtering 
 
-Display a graph of all people found in the photo album. Selecting a person in that graph would then only show photos which contain that person. Multiple people can be selected at once, such that if person A and person B are selected, only photos containing person A and person B in them will be shown.
+Display a graph of all people found in the photo album. 
+Selecting a person in that graph would then only show photos which contain that person. 
+Multiple people can be selected at once, such that if person A and person B are selected, only photos containing person A and person B in them will be shown.
 
 ### ML Facial Recognition
 
 A tagging system that would display people's faces to "tag" them as. Should be then be able to feed the tagged data into a model which would then auto tag future photos of those people.
-
-### API Backend
-
-Setup an easy backend in go for it to load from instead of hardcoding the data into the repo
 
 ## Development
 
