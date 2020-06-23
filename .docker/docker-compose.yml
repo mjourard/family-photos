@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  fp_psql:
+    container_name: fp_psql
+    image: postgres
+    env_file:
+      - database.env
+    volumes:
+      - psql_data:/var/lib/postgresql/data/ # persist data even if container shuts down
+      - "./psql/data:/docker-entrypoint-initdb.d"
+  hoster:
+    container_name: hoster
+    image: dvdarias/docker-hoster
+    volumes:
+      - /etc/hosts:/tmp/hosts
+      - /run/docker.sock:/tmp/docker.sock
+volumes:
+  psql_data:

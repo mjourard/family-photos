@@ -13,23 +13,7 @@ I didn't want to upload private family photos to github, so I used screenshots f
 ### API Backend
 
 Setup an easy backend in java for it to load from instead of hardcoding the data into the repo.
-
-Entities:
-* Photo - a photo
-    * photo_id
-    * name
-    * description
-    * date entered
-    * date modified
-    * object_storage_id
-* Object Storage
-    * object_storage_id
-    * type of storage
-    * json_storage_data
-* tag
-    * tag_id
-    * photo_id
-    * name
+    
     
 Endpoints:
 * /signup - creates an account
