@@ -6,7 +6,10 @@
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "rest": "^2.0.0",
+    "sockjs-client": "^1.4.0",
+    "stompjs": "^2.3.3"
   },
   "resolutions": {
     "**/**/serialize-javascript": "^2.1.1",
@@ -20,6 +23,7 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },

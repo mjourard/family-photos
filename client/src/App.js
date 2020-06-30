@@ -3,6 +3,13 @@ import './App.css';
 import ThumbnailSelect from './components/thumbnail-select/ThumbnailSelect';
 import Book from './components/book/Book';
 import data from './meta.js';
+import when from 'when';
+import client from './api/client';
+import follow from './api/follow';
+import stompClient from './api/websocket-listener';
+
+const root = '/api';
+
 
 class App extends React.Component {
     constructor(props) {
